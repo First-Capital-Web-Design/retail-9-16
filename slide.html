@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<head>
+
+  <title>Slider Test</title>
+
+  <script src="js/jquery.min.js"></script>
+  <script src="https://use.fontawesome.com/73630fef6c.js"></script>
+
+  <script>
+   $(document).ready(function(){
+
+    $(".slide-arrow-right").click(function(){
+
+      $(this).parent().append($(this).parent().children(".slide").first());
+
+    });
+
+    $(".slide-arrow-left").click(function(){
+
+      $(this).parent().prepend($(this).parent().children(".slide").last());
+
+      console.log("hello");
+
+    });
+
+  })
+  </script>
+
+  <style>
+    .slideshow-container{
+      outline:1px solid orange;
+      width: 500px;
+      height: 350px;
+      margin-left: calc(50% - 250px);
+    }
+    .slideshow-wrapper{
+      width: 100%;
+      height: 100%;
+      background-color: red;
+      position: relative;
+    }
+    .slide{
+      width: 100%;
+      height: 100%;
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-position: -650px 0;
+      background-position: center;
+      position: absolute;
+      left: 0;
+      top: 0;
+    }
+    .slide-current{
+      background-position: center;
+    }
+    .slide-arrow-right{
+      position: absolute;
+      top: 160px;
+      right: 20px;
+      color: rgba(255,255,255,.8);
+      text-shadow: 2px 2px 8px rgba(0,0,0,.8);
+      z-index: 5;
+    }
+    .slide-arrow-left{
+      position: absolute;
+      top: 160px;
+      left: 20px;
+      color: rgba(255,255,255,.8);
+      text-shadow: 2px 2px 8px rgba(0,0,0,.8);
+      z-index: 5;
+    }
+  </style>
+
+</head>
+<body>
+  <div class="slideshow-container">
+
+      <div class="slideshow-wrapper">
+
+        <div class="slide slide-current slide1" style="background-image: url(https://upload.wikimedia.org/wikipedia/commons/6/67/Inside_the_Batad_rice_terraces.jpg);"></div>
+
+        <div class="slide slide2" style="background-image: url(http://feelgrafix.com/data/landscape/landscape-4.jpg);"></div>
+
+        <div class="slide slide3" style="background-image: url(http://www.freelargeimages.com/wp-content/uploads/2014/12/Landscape_32131652.jpg);"></div>
+
+        <div class="slide-arrow-right"><i class="fa fa-arrow-right fa-2x" aria-hidden="true"></i></i></div>
+
+        <div class="slide-arrow-left"><i class="fa fa-arrow-left fa-2x" aria-hidden="true"></i></i></div>
+
+      </div>
+
+  </div>
+</body>
+</html>

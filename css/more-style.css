@@ -1,0 +1,1001 @@
+/*GENERAL STYLES*/
+body{
+  background-size: cover;
+}
+li{
+  color: #444;
+  font-size: 17px;
+}
+ul {
+    list-style:none;
+    padding-left:0;
+}
+p{
+  font-size: 17px;
+}
+html, body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+h1{
+  margin: 80px 0px 30px 0;
+  text-transform: uppercase;
+  font-size: 30px;
+}
+.clearfix:after {
+   content: " ";
+   display: block;
+   height: 0;
+   clear: both;
+}
+.content-wrapper{
+  padding: 50px;
+}
+.arrow-full-width{
+  background-image: url(https://github.com/First-Capital-Web-Design/FCRE-trust-site-1/blob/gh-pages/images/arrow-full-width.png?raw=true);
+  background-size: 100vw 80px;
+  height: 80px;
+  width: 100vw;
+  position: absolute;
+  bottom: 0;
+  z-index: 5;
+}
+.scroll-navbar{
+  position: fixed;
+  top: 0px;
+  left: 0;
+  width: 100vw;
+  height: 100px;
+  background-color: white;
+  z-index: 6;
+  text-align: right;
+  padding: 30px 40px;
+  box-shadow: 1px 1px 12px rgba(0, 0, 0, .7);
+  -webkit-transition: top .5s;
+}
+
+div.scroll-navbar a:link{
+  text-align: right;
+  color: #154b87;
+  line-height: 0;
+  font-size: 18px;
+  padding: 20px 8px;
+}
+div.nav-scroll a:hover{
+  color: orange;
+}
+.page-head-container{
+  display: block;
+  width: 100vw;
+  height: 500px;
+  background-color: red;
+  background-size: 80%;
+  background-position: right center;
+  background-repeat: no-repeat;
+  overflow: hidden;
+  position: relative;
+  background-image: url(http://media.gettyimages.com/photos/coffee-shop-employee-picture-id498998551);
+}
+.page-head-content-container{
+  background-color: #e6c300;
+  width: 200px;
+  height: 100%;
+  position: absolute;
+  left: -100px;
+  top: 0;
+  box-shadow: 200px 0 250px  150px #e6c300;
+}
+.page-head-content{
+  width: 300px;
+  position: absolute;
+  left: 20px;
+  top: 0px;
+  color: white;
+  font-size: 20px;
+  line-height: 25px;
+  padding: 0px 20px;
+}
+.page-head-content h1{
+  color: white;
+}
+/*Stops the font flicker while loading Adobe Webfont*/
+.wf-loading h1, .wf-loading h2, .wf-loading h3, .wf-loading h4, .wf-loading p, .wf-loading li, .wf-loading{
+ visibility: hidden;
+}
+/*LOGO STYLING*/
+.placeholder{
+  background-image: url("") !important;
+  background-size: 100% 100%;
+  background-position: center;
+  display: block;
+  width: 320px;
+  height: 82px;
+  -webkit-transition: height 2s, width 2s;
+  margin-left: 0px;
+}
+.logo{
+  background-image: url(../images/retail-logo.png) !important;
+  background-size: 100% 100%;
+  background-position: center;
+  display: block;
+  width: 240px;
+  height: 70px;
+  -webkit-transition: height 2s, width 2s, background-image .2s;
+  margin-left: 0px;
+  position: absolute;
+  left: 8.3%;
+  top:50px;
+  z-index: 5;
+}
+.logo-small-nav{
+  width: 250px;
+  height: 70px;
+  position: absolute;
+  left: 40px;
+  top: 15px;
+  background-image: url(../images/retail-logo.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  -webkit-transition: opacity .5s;
+}
+/*ABOUT*/
+.brand-container{
+  display: block;
+  height:  200px;
+  background-color: white;
+  overflow: hidden;
+  transition: all .5s;
+}
+.brand-click{
+  float: left;
+  position: relative;
+  width: 25vw;
+  height: 200px;
+  background-size: 80% auto;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-colr: red;
+  transition: all .2s, width 0;
+  overflow: visible;
+}
+.brand-click:hover{
+}
+/*.brand-click:hover{
+  opacity:.8;
+}*/
+.brand-content-container{
+  width: 100vw;
+  height: 500px;
+  background-color: #005faf;
+  position: absolute;
+  top: 200px;
+  left: 0;
+  visibility: hidden;
+  color: white;
+  opacity: 1;
+  transition: all .7s;
+  border-bottom: 2px solid white;
+}
+.brand-content{
+  float: left;
+  visibility: inherit;
+}
+.brand-content p{
+  color: white;
+  width: 300px;
+  margin: 20px 0 0 10vw;
+  display: inline-block;
+}
+.brand-content  h1{
+  margin: 100px 0 0 10vw;
+  color: white;
+}
+.brand-content-image{
+  width: 50vw;
+  height: 498px;
+  display: inline-block;
+  position: absolute;
+  right: 0;
+  top:0;
+  background-size: cover;
+}
+.auntie-annes{
+  background-image:url(../images/auntie-annes-logo.png);
+  background-color: #005faf;
+}
+.auntie-annes::before{
+
+}
+.mrs-fields{
+  background-color: #c32031;
+  background-image:url(../images/mrs-fields-logo.png);
+}
+.tcby{
+  background-color: #ff00fe;
+  background-image:url(../images/tcby-logo.png);
+}
+.cinnabon{
+  background-color: silver;
+  background-image:url(../images/cinnabon-logo.png);
+}
+.cinnabon h1, .cinnabon p{
+  color: #211551;
+}
+.dark-overlay-wrapper{
+  width: 100vw;
+  height: auto;
+  padding: 0px 0 150px 0;
+  background-color:rgba(51, 79, 157,.85);
+
+}
+.section-head{
+  width: 250px;
+  float: left;
+  margin-top: 20px;
+  font-size: 30px;
+  line-height: 30px;
+}
+.team-photo{
+  width: auto;
+  float: left;
+}
+.section-content{
+  margin-top: 20px;
+  margin-bottom: 50px;
+  width: calc(100% - 250px);
+  float: left;
+  padding-left: 20px;
+  font-size: 20px;
+  line-height: 23px;
+}
+.about-info{
+  position: absolute;
+  width: 41.6%;
+  height: auto;
+  left: 8.3%;
+  top: 250px;
+  z-index: 3;
+  overflow: hidden;
+  -webkit-transition: all 1s ease-out;
+  transition: all 1s ease-out;
+  color: white;
+  opacity: .7;
+}
+.about-info:hover{
+  opacity: 1;
+}
+.about-info p{
+  color: white;
+  padding: 0 20px;
+}
+.why-us-content{
+  background-color:white;
+  width: 50%;
+  min-height: 600px;
+  padding: 50px;
+  margin-left: 16.6%;
+  float: left;
+}
+.project-sample{
+  width: 16.6vw;
+  height: 16.6vw;
+  background-color: red;
+  float: left;
+  border-radius: 50%;
+  background-size: cover;
+  box-shadow: 1px 1px 12px rgba(0, 0, 0, .7);
+  text-align: center;
+  padding-top: 6vw;
+  font-size: 30px;
+  color: white;
+  text-shadow: 1px 1px 4px rgba(0, 0, 0, 1);
+}
+.project-sample + .project-sample{
+  margin-top: 30px;
+}
+/*ADVISOR AND BOARD*/
+.board-info-container{
+  height: auto;
+  width: calc(100% - 200px);
+  float: left;
+  background-color: white;
+  padding: 50px;
+  box-shadow: 1px 1px 50px rgba(0, 0, 0, .7);
+}
+.board-member-picture{
+  height: 45%;
+  width: 55%;
+  background-size: auto 95%;
+  background-repeat: no-repeat;
+  background-position: center;
+  float: left;
+}
+.board-member-header{
+  width: calc(100%);
+  padding-bottom: 30px;
+  height: auto;
+  color: blue;
+  float: left;
+}
+.board-member-header h1{
+  font-size: 50px;
+  line-height: 50px;
+  color: #3863ba;
+  margin: 0 0 30px 0;
+}
+.board-member-header h2{
+  font-size: 20px;
+  color: grey;
+  line-height: 0;
+  margin-top: -20px;
+}
+.board-member-info{
+  height: 55%;
+  width: 100%;
+  text-align: justify;
+  float: left;
+}
+.board-member-info p{
+  font-size: 15px;
+  line-height: 18px;
+}
+.board-members-container{
+  height: 300px;
+  padding-top: 140px;
+  width: 200px;
+  float: left;
+  text-align: center;
+  line-height: 26px;
+}
+.name{
+  width: 100%;
+  /*margin-left: -100px;*/
+  border: 1px solid grey;
+  border-right: 0;
+  padding: 7px 0;
+  color: grey;
+  background-color: white;
+  border-left: 8px solid grey;
+  -webkit-transition: all .5s;
+  transition: all .5s;
+  cursor: pointer;
+}
+.name+.name{
+  border-top: 0;
+}
+.name:hover{
+  color: orange;
+  border-left-color: orange;
+  padding-right: 20px;
+  margin-left: -10px;
+  width: 215px;
+}
+/*Services*/
+.services-banner{
+  width: 600px;
+  height: 200px;
+  position: absolute;
+  top: 40vh;
+  left: -200px;
+  background-image:url(https://github.com/First-Capital-Web-Design/FCRE-builders-2/blob/gh-pages/images/services-banner.png?raw=true);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background position: center left;
+}
+  @-webkit-keyframes fadeIn { from { opacity:0; } to { opacity:.7; } }
+  @-moz-keyframes fadeIn { from { opacity:0; } to { opacity:.7; } }
+  @keyframes fadeIn { from { opacity:0; } to { opacity:.7; } }
+
+  .fade-in {
+  	opacity:0;  /* make things invisible upon start */
+  	-webkit-animation:fadeIn ease-in 1;  /* call our keyframe named fadeIn, use animattion ease-in and repeat it only .6 time */
+  	-moz-animation:fadeIn ease-in 1;
+  	animation:fadeIn ease-in 1;
+
+  	-webkit-animation-fill-mode:forwards;  /* this makes sure that after animation is done we remain at the last keyframe value (opacity: .6)*/
+  	-moz-animation-fill-mode:forwards;
+  	animation-fill-mode:forwards;
+
+  	-webkit-animation-duration:.6s;
+  	-moz-animation-duration:.6s;
+  	animation-duration:.6s;
+  }
+/*Projects*/
+.project-object{
+  position: relative;
+  z-index: 2;
+  width: calc(100vw - 600px);
+  margin-left: calc(320px);
+  height: 470px;
+  background: white;
+  box-shadow: 2px 4px 7px rgba(0, 0, 0, .8);
+  margin-top: 40px;
+  margin-bottom: 100px;
+}
+.project-image{
+  width: 100%;
+  height: 470px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  position: relative;
+  overflow: hidden;
+}
+.project-head{
+  height: auto;
+  padding: 0 10px 0 10px;
+  background-color: white;
+  font-size: 24px;
+  margin: 10px 0 30px 0px;
+  width: calc(100vw - 500px);
+  text-transform: none;
+  box-shadow: 2px 4px 7px rgba(0, 0, 0, .8);
+  float: left;
+}
+.info-button{
+  width: 36px;
+  background-color: white;
+  padding: 0px 8px;
+  border-radius: 50px;
+  margin: 15px 10px;
+  box-shadow: 2px 4px 7px rgba(0, 0, 0, .8);
+  transition: all .5s;
+  float: left;
+  text-align: center;
+}
+.info-button:hover{
+  background-color: orange;
+  color: white;
+}
+.projects-nav{
+  width: 160px;
+  outline: 2px solid white;
+  position: fixed;
+  top: calc(100vh + 15px);
+  left: 130px;
+  height: 240px;
+  text-align: center;
+  background-color: #154b87;
+  box-shadow: 2px 4px 7px rgba(0, 0, 0, .8);
+}
+.projects-nav li a{
+  color: white;
+  font-size: 16px;
+  margin-left: 27px;
+}
+.projects-nav-active a{
+  color: orange !important;
+}
+.project-info-wrapper{
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 0px;
+  height: 100%;
+  overflow: hidden;
+  transition: width 1.2s ease;
+}
+.project-info-wrapper-active{
+  width: 350px;
+}
+.project-info{
+  width: 350px;
+  height: 500px;
+  position: absolute;
+  right: -355px;
+  top: 0;
+  background-color: white;
+  padding: 40px;
+  -webkit-transition: right 1.2s ease;
+  font-size: 17px;
+  line-height: 21px;
+  color: #444;
+  box-shadow: -2px 0 5px rgba(0, 0, 0, .5);
+  opacity: .8;
+}
+.project-info-active{
+  right: 0px;
+}
+.project-info a{
+  color: orange;
+  cursor: pointer;
+}
+.project-info a:hover{
+  color: #444;
+}
+.remove{
+  color: orange;
+  position: absolute;
+  left: 10px;
+  top: 10px;
+  cursor: pointer;
+}
+.slide-arrow-right{
+  position: absolute;
+  top: 200px;
+  right: 20px;
+  color: rgba(255,255,255,.8);
+  text-shadow: 2px 2px 8px rgba(0,0,0,.8);
+  z-index: 5;
+  cursor: pointer;
+}
+.slide-arrow-left{
+  position: absolute;
+  top: 200px;
+  left: 20px;
+  color: rgba(255,255,255,.8);
+  text-shadow: 2px 2px 8px rgba(0,0,0,.8);
+  z-index: 5;
+  cursor: pointer;
+}
+.slide{
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: -650px 0;
+  background-position: center;
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+.slideshow-wrapper{
+  width: 100%;
+  height: 100%;
+  background-color: transparent;
+  position: relative;
+  overflow: hidden;
+}
+/**/
+td, th {
+    border: 1.5px solid #154b87;
+    padding-left: 8px;
+    color: grey;
+}
+table{
+  width: 100%;
+}
+.tiny-table{
+  color: orange;
+  font-size: 10px;
+}
+td .tiny-table{
+  color: orange;
+  font-size: 12px;
+  vertical-align: top;
+}
+.icon-head{
+  width: 300px;
+  height: 60px;
+  background-color: orange;
+  position: absolute;
+  padding: 10px;
+  bottom: -25px;
+  -webkit-transition: all .35s ease-out;
+  left: 0;
+}
+.icon-overlay{
+  background-image: url(http://fcretrust.com/assets/urti-properties/TildenProperty0.jpg);
+  height: 165px;
+  width: 100%;
+  background-size: auto 165px;
+  background-position: top;
+  background-repeat: no-repeat;
+  opacity: 0;
+  -webkit-transition: all .35s ease-out;
+}
+.property-icon:hover .icon-head{
+  bottom: 0;
+  background-color:#154b87;
+}
+.property-icon:hover .icon-overlay{
+  opacity: 1;
+}
+.icon-head h4 {
+  color: white;
+  font-size: 17px;
+}
+.icon-head p{
+  color: orange;
+  line-height: 0;
+  font-size: 15px;
+  margin-top: -18px;
+}
+.slideshow-container{
+  width: 100%;
+  height: 268px;
+  margin-bottom: 20px;
+}
+.slide-object{
+  width: 20%;
+  height: 100%;
+  background-size: 100% auto;
+  background-position: bottom left;
+  background-repeat: no-repeat;
+  float: left;
+  height: 50%;
+}
+.slide-object+.slide-object{
+  margin-left: 10px;
+}
+.slide-object-active{
+  width: 50%;
+  height: 100%;
+}
+.property{
+  float: left;
+}
+.continue-button:hover{
+  background-color: orange;
+  color: #154b87;
+}
+.investing p{
+  font-size: 16px;
+}
+header{
+  position: relative;
+  z-index: 5;
+  -webkit-transition: height 1.5s;
+}
+.visible{
+  display: block;
+}
+.no-scroll{
+  overflow: hidden;
+}
+dl{
+  margin-bottom: 5px;
+}
+dl a{
+  color: white;
+}
+.shadow{
+  box-shadow: 0px 0px 0px -3px transparent;
+  width: 100%;
+  padding-bottom: 10px;
+  -webkit-transition: box-shadow .5s ease-out;
+}
+.shadow:hover{
+  box-shadow: 0px 0px 15px 0px orange;
+  color: orange !important;
+}
+.hover-orange:hover{
+  color: orange !important;
+}
+@media (min-width: 1000px) {
+          #fh5co-main-nav{
+            margin-right: 0px !important;
+            margin-top: -115px;
+            float: right!important;
+            position: relative;
+            padding-top: 30px;
+            padding-right: 50px;
+          }
+          header{
+            padding-top: 10px;
+            padding-bottom: 0;
+            height: 100px;
+          }
+          header #fh5co-main-nav {
+            right: 50px;
+            position: absolute;
+          }
+
+}
+@media (max-width: 999px) {
+
+          .logo{
+            margin-left: calc(50% - 123px);
+            top: 20px;
+            left: 0;
+          }
+          header{
+            height: 150px;
+            padding-top:0;
+          }
+          .fh5co-navbar-brand{
+            padding-bottom: 10px !important;
+          }
+          header #fh5co-main-nav > ul li a {
+            font-size: 15px;
+          }
+          .properties-blurb{
+            width: 50%;
+            top: 180px;
+          }
+          #map{
+            height: calc(100vh - 150px);
+          }
+          .forms-container{
+            box-shadow: 0 5px lightgrey inset;
+            border-top: 0px solid transparent;
+            margin-top: 50px;
+          }
+          .form-tab-container{
+            position: relative;
+            top: auto;
+            height: auto;
+            float: left;
+          }
+          .form-tab-active{
+            border-bottom: 2px solid grey;
+          }
+          .form-tab{
+            width: 100%;
+            height: 100%;
+            font-size: 15px;
+            padding: 5px;
+            border-radius: 5px 5px 0 0;
+            cursor: pointer;
+            margin-bottom: -4px;
+          }
+          .form-head{
+            float: left;
+            width: 100%;
+          }
+          .form-object{
+            height: auto;
+            padding: 15px;
+            color: #154b87;
+            font-size: 13px;
+            line-height: 18px;
+            float: left;
+            background-color: white;
+          }
+          .terms-agree-content{
+            height: 60vh;
+          }
+}
+
+@media (max-width: 1199px) {
+
+          .page-head-container{
+            margin-top: 0px;
+          }
+}
+
+@media (min-width: 568px) {
+
+          .mobile-nav{
+            display: none !important;
+          }
+
+}
+
+@media (max-width: 568px) {
+
+          header #fh5co-main-nav > ul li {
+            display: block;
+            margin-left: 0;
+            margin-bottom: 0px;
+            font-size: 15px;
+          }
+          header{
+            padding-top: 20px;
+            width: 100vw;
+            padding-bottom: 20px;
+            height: 118px;
+          }
+          .logo{
+            margin-left: calc(50% - 100px);
+            left: 0;
+            width: 200px;
+            height: 60px;
+            top: 40px;
+          }
+          header .fh5co-navbar-brand {
+            padding-bottom: 0;
+          }
+          body{
+            width: 100%;
+            overflow-x: hidden;
+          }
+          .info-content-slided{
+            top: 90px;
+          }
+          .info-content{
+            font-size: 14px;
+            line-height: 18px;
+            left:0;
+            left: 12.5vw;
+            width: 75vw;
+          }
+          .mobile-nav{
+            display: block;
+            position: absolute;
+            right: 10px;
+            top: 10px;
+            width: 20px;
+            height: 20px;
+            z-index: 6;
+          }
+          #fh5co-main-nav {
+            overflow: hidden;
+            height: 0px;
+            -webkit-transition: height 1.5s;
+            background-color: white !important;
+            width: 100%;
+            z-index: 10;
+          }
+          .container{
+            padding: 0;
+          }
+          .nav-active{
+            height: 140px !important;
+          }
+          .nav-info-active{
+            top: 190px !important;
+          }
+          .fh5co-table, .fh5co-table-cell, .fh5co-hero, .fh5co-parallax{
+            height: 440px !important;
+          }
+         .list-terms{
+           font-size: 15px;
+        }
+         .mobile-footer-text{
+           font-size: 14px;
+         }
+         .contact-mobile{
+           display: none;
+         }
+        .contact-mobile-second{
+          margin-top: 0 !important;
+        }
+        .opportunity-background{
+          padding-top: 20px;
+          height: auto !important;
+          min-height: calc(100vh - 59px);
+        }
+        .opportunity-head{
+          width: 100%;
+          opacity: .85;
+        }
+        .opportunity-text{
+          font-size: 13px;
+          line-height: 22px;
+          background:rgba(50, 50, 50, .85);
+          margin-bottom: 250px;
+        }
+        .dual{
+          width: 100%;
+          margin: 0;
+          font-size: 15px;
+        }
+        .dual-plus{
+          width: 100%;
+          font-size: 60px;
+        }
+        .property-icon{
+          width: 46.5%;
+          background-size: auto 100%;
+        }
+        .icon-overlay{
+          background-size: auto 100%;
+          height: 100%
+        }
+        .properties-head{
+          background-color: orange;
+          color: white;
+          width: 300px;
+          margin-left: calc(50% - 150px);
+          text-align: center;
+          font-size: 20px;
+          margin-top: 0;
+          margin-bottom: 60px;
+          height: 125px;
+          padding-top: 24px;
+          position: relative;
+          color: white;
+          letter-spacing: 0.2em;
+          text-align: center;
+          text-transform: uppercase;
+        }
+        .properties-head:after{
+          content: "";
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        width: 0;
+        height: 0;
+        border-bottom: 30px solid #b3cccc;
+        border-left: 150px solid transparent;
+        border-right: 150px solid transparent;
+        }
+        .side-shadows{
+          box-shadow: 0px -2px 10px #444 !important;
+        }
+        .properties-blurb{
+          width: 100%;
+          position: relative;
+          top:0;
+          right:0;
+          max-height: none;
+          border: none;
+          box-shadow: none;
+          z-index: 0;
+        }
+        .properties-blurb p{
+          font-size: 20px;
+        }
+        #map{
+          display: none;
+        }
+        .property-icon-content{
+          position: fixed;
+          width: 90vw;
+          height: 70vh;
+          background-color: white;
+          left: 5vw;
+          z-index: 10;
+          bottom: 15vh;
+          box-shadow: 1px 1px 30px #444, 0px 0px 2000px 2000px rgba(0, 0, 0, .5);
+          -webkit-transition: all 1.5s ease-out;
+          display: none;
+          overflow: hidden;
+          border-radius: 4px;
+        }
+        .property-icon-content p{
+          font-size: 15px;
+        }
+        tr, td{
+          font-size: 13px;
+        }
+        .property-icon-content-scroll{
+          position: relative;
+          width: 100%;
+          height: calc(100% - 45px);
+          overflow: scroll;
+          padding: 10px;
+        }
+        .property-icon{
+          height: 140px;
+        }
+        .icon-head{
+          padding: 5px;
+          height: 47px;
+        }
+        .icon-head h4{
+          font-size: 11px;
+        }
+        .icon-head p{
+          font-size: 10px;
+        }
+        .tiny-table{
+          font-size: 10px !important;
+        }
+        .slide-object-active{
+          width: 100%;
+          height: 100%;
+        }
+        .row{
+          margin-left: 0;
+          margin-right: 0;
+        }
+        header, #fh5co-intro-section, #fh5co-services-section, #fh5co-featured-work-section, #fh5co-common-section, #fh5co-blog-section, #footer, #fh5co-contact-section, #fh5co-work-section{
+          padding-bottom:0;
+          }
+        h2{
+          width: 100% !important;
+          margin-left: 0 !important;
+        }
+        #fh5co-common-section{
+          padding-bottom: 50px;
+        }
+        .section-content{
+          margin-top: 20px;
+          width: calc(100%);
+          float: left;
+          font-size: 25px;
+          line-height: 21px;
+          padding-left: 0;
+        }
+        .content-wrapper{
+          padding: 20px;
+        }
+        .section-head{
+          margin-top: 0px;
+        }
+        .rule{
+          margin: 30px 0 0 0;
+        }
+}

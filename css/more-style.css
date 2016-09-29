@@ -78,13 +78,13 @@ div.nav-scroll a:hover{
   background-image: url(http://media.gettyimages.com/photos/coffee-shop-employee-picture-id498998551);
 }
 .page-head-content-container{
-  background-color: #e6c300;
+  background-color: orange;
   width: 200px;
   height: 100%;
   position: absolute;
   left: -100px;
   top: 0;
-  box-shadow: 200px 0 250px  150px #e6c300;
+  box-shadow: 200px 0 250px  150px orange;
 }
 .page-head-content{
   width: 300px;
@@ -158,6 +158,7 @@ div.nav-scroll a:hover{
   background-colr: red;
   transition: all .2s, width 0;
   overflow: visible;
+  border-bottom: 2px solid white;
 }
 .brand-click:hover{
 }
@@ -174,29 +175,40 @@ div.nav-scroll a:hover{
   visibility: hidden;
   color: white;
   opacity: 1;
-  transition: all .7s;
+  transition: all .7s, width 0;
   border-bottom: 2px solid white;
+  padding: 50px;
 }
 .brand-content{
+  width: 40vw;
   float: left;
+  visibility: inherit;
+}
+.brand-content-right{
+  float: right;
   visibility: inherit;
 }
 .brand-content p{
   color: white;
-  width: 300px;
-  margin: 20px 0 0 10vw;
+  width: 400px;
   display: inline-block;
 }
 .brand-content  h1{
-  margin: 100px 0 0 10vw;
   color: white;
 }
-.brand-content-image{
+.brand-content-image-right{
   width: 50vw;
   height: 498px;
-  display: inline-block;
   position: absolute;
   right: 0;
+  top:0;
+  background-size: cover;
+}
+.brand-content-image-left{
+  width: 50vw;
+  height: 498px;
+  position: absolute;
+  left: 0;
   top:0;
   background-size: cover;
 }
@@ -222,6 +234,43 @@ div.nav-scroll a:hover{
 .cinnabon h1, .cinnabon p{
   color: #211551;
 }
+.team-container{
+  width: 100vw;
+  height: 800px;
+  background-color: silver;
+  padding: 40px 0 120px 0;
+
+}
+.team-names{
+  width: 200px;
+  float: left;
+  margin-left: 100px;
+  padding-right: 20px
+}
+.team-names li{
+  color: white;
+  font-size: 23px;
+  text-align: right;
+  cursor: pointer;
+}
+.team-content{
+  float: left;
+  width: 700px;
+  height: auto;
+  padding: 30px 30px 70px 30px;
+  outline: 1px solid white;
+  color: white;
+  box-shadow: 0 0 40px rgba(0,0,0,.6);
+  background-color: #3863ba;
+}
+.team-content h1{
+  color: orange;
+  margin-top: 30px;
+}
+
+
+
+
 .dark-overlay-wrapper{
   width: 100vw;
   height: auto;
@@ -347,29 +396,6 @@ div.nav-scroll a:hover{
   float: left;
   text-align: center;
   line-height: 26px;
-}
-.name{
-  width: 100%;
-  /*margin-left: -100px;*/
-  border: 1px solid grey;
-  border-right: 0;
-  padding: 7px 0;
-  color: grey;
-  background-color: white;
-  border-left: 8px solid grey;
-  -webkit-transition: all .5s;
-  transition: all .5s;
-  cursor: pointer;
-}
-.name+.name{
-  border-top: 0;
-}
-.name:hover{
-  color: orange;
-  border-left-color: orange;
-  padding-right: 20px;
-  margin-left: -10px;
-  width: 215px;
 }
 /*Services*/
 .services-banner{

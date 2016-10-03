@@ -65,8 +65,15 @@ div.scroll-navbar a:link{
 div.nav-scroll a:hover{
   color: orange;
 }
+.slide-wrapper{
+  min-height: 450px;
+  height: calc(100vh - 140px;)
+  width: 100vw;
+  overflow:hidden;
+  white-space: nowrap;
+}
 .page-head-container{
-  display: block;
+  display: inline-block;
   width: 100vw;
   height: 500px;
   background-color: red;
@@ -75,7 +82,12 @@ div.nav-scroll a:hover{
   background-repeat: no-repeat;
   overflow: hidden;
   position: relative;
+  white-space: normal;
   background-image: url(http://media.gettyimages.com/photos/coffee-shop-employee-picture-id498998551);
+  transition: margin-left 1s;
+}
+.page-head-container + .page-head-container {
+  margin:0;
 }
 .page-head-content-container{
   background-color: orange;

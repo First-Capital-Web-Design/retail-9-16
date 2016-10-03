@@ -73,10 +73,22 @@ div.nav-scroll a:hover{
   white-space: nowrap;
 }
 .page-head-container{
+  display:block;
+  width: 100vw;
+  height: 500px;
+  background-size: 80%;
+  background-position: right center;
+  background-repeat: no-repeat;
+  overflow: hidden;
+  position: relative;
+  white-space: normal;
+  background-image: url(http://media.gettyimages.com/photos/coffee-shop-employee-picture-id498998551);
+  transition: margin-left 1s;
+}
+.slide-head-container{
   display: inline-block;
   width: 100vw;
   height: 500px;
-  background-color: red;
   background-size: 80%;
   background-position: right center;
   background-repeat: no-repeat;

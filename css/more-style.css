@@ -29,20 +29,10 @@ h1{
    height: 0;
    clear: both;
 }
-.content-wrapper{
-  padding: 50px;
-}
-.arrow-full-width{
-  background-image: url(https://github.com/First-Capital-Web-Design/FCRE-trust-site-1/blob/gh-pages/images/arrow-full-width.png?raw=true);
-  background-size: 100vw 80px;
-  height: 80px;
-  width: 100vw;
+
+/*NAVBAR*/
+.navbar{
   position: absolute;
-  bottom: 0;
-  z-index: 5;
-}
-.scroll-navbar{
-  position: fixed;
   top: 0px;
   left: 0;
   width: 100vw;
@@ -54,8 +44,13 @@ h1{
   box-shadow: 1px 1px 12px rgba(0, 0, 0, .7);
   -webkit-transition: top .5s;
 }
-
-div.scroll-navbar a:link{
+.navbar-fixed{
+  position: fixed;
+}
+.navbar-placeholder{
+  height: 100px;
+}
+div.navbar a:link{
   text-align: right;
   color: #154b87;
   line-height: 0;
@@ -65,6 +60,7 @@ div.scroll-navbar a:link{
 div.nav-scroll a:hover{
   color: orange;
 }
+/*PAGE HEAD*/
 .slide-wrapper{
   min-height: 450px;
   height: calc(100vh - 140px;)
@@ -76,8 +72,8 @@ div.nav-scroll a:hover{
   display:block;
   width: 100vw;
   height: 500px;
-  background-size: 80%;
-  background-position: right center;
+  background-size: 100%;
+  background-position: center center;
   background-repeat: no-repeat;
   overflow: hidden;
   position: relative;
@@ -102,26 +98,30 @@ div.nav-scroll a:hover{
   margin:0;
 }
 .page-head-content-container{
-  background-color: orange;
-  width: 200px;
-  height: 100%;
   position: absolute;
-  left: -100px;
-  top: 0;
-  box-shadow: 200px 0 250px  150px orange;
+  left: 30px;
+  top: calc(50% - 200px);
+  width: 350px;
+  height: 400px;
+  background-color: white;
+  box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.8);
+  overflow: hidden;
 }
 .page-head-content{
-  width: 300px;
-  position: absolute;
-  left: 20px;
-  top: 0px;
-  color: white;
-  font-size: 20px;
-  line-height: 25px;
-  padding: 0px 20px;
+  width: 350px;
+  position: relative;
+  color: black;
+  font-size: 18px;
+  line-height: 23px;
+  padding: 50px;
 }
 .page-head-content h1{
+  background-color: orange;
   color: white;
+  padding: 5px 50px;
+  width: 350px;
+  margin-top: 0;
+  margin-left: -50px;
 }
 /*Stops the font flicker while loading Adobe Webfont*/
 .wf-loading h1, .wf-loading h2, .wf-loading h3, .wf-loading h4, .wf-loading p, .wf-loading li, .wf-loading{
@@ -164,133 +164,7 @@ div.nav-scroll a:hover{
   -webkit-transition: opacity .5s;
 }
 /*ABOUT*/
-.brand-container{
-  display: block;
-  height:  200px;
-  background-color: white;
-  overflow: hidden;
-  transition: all .5s;
-}
-.brand-click{
-  float: left;
-  position: relative;
-  width: 25vw;
-  height: 200px;
-  background-size: 80% auto;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-colr: red;
-  transition: all .2s, width 0;
-  overflow: visible;
-  border-bottom: 2px solid white;
-}
-.brand-click:hover{
-}
-/*.brand-click:hover{
-  opacity:.8;
-}*/
-.brand-content-container{
-  width: 100vw;
-  height: 500px;
-  background-color: #005faf;
-  position: absolute;
-  top: 200px;
-  left: 0;
-  visibility: hidden;
-  color: white;
-  opacity: 1;
-  transition: all .7s, width 0;
-  border-bottom: 2px solid white;
-  padding: 50px;
-}
-.brand-content{
-  width: 40vw;
-  float: left;
-  visibility: inherit;
-}
-.brand-content-right{
-  float: right;
-  visibility: inherit;
-}
-.brand-content p{
-  color: white;
-  width: 400px;
-  display: inline-block;
-}
-.brand-content  h1{
-  color: white;
-}
-.brand-content-image-right{
-  width: 50vw;
-  height: 498px;
-  position: absolute;
-  right: 0;
-  top:0;
-  background-size: cover;
-}
-.brand-content-image-left{
-  width: 50vw;
-  height: 498px;
-  position: absolute;
-  left: 0;
-  top:0;
-  background-size: cover;
-}
-.auntie-annes{
-  background-image:url(../images/auntie-annes-logo.png);
-  background-color: #005faf;
-}
-.auntie-annes::before{
 
-}
-.mrs-fields{
-  background-color: #c32031;
-  background-image:url(../images/mrs-fields-logo.png);
-}
-.tcby{
-  background-color: #ff00fe;
-  background-image:url(../images/tcby-logo.png);
-}
-.cinnabon{
-  background-color: silver;
-  background-image:url(../images/cinnabon-logo.png);
-}
-.cinnabon h1, .cinnabon p{
-  color: #211551;
-}
-.team-container{
-  width: 100vw;
-  height: 800px;
-  background-color: silver;
-  padding: 40px 0 120px 0;
-
-}
-.team-names{
-  width: 200px;
-  float: left;
-  margin-left: 100px;
-  padding-right: 20px
-}
-.team-names li{
-  color: white;
-  font-size: 23px;
-  text-align: right;
-  cursor: pointer;
-}
-.team-content{
-  float: left;
-  width: 700px;
-  height: auto;
-  padding: 30px 30px 70px 30px;
-  outline: 1px solid white;
-  color: white;
-  box-shadow: 0 0 40px rgba(0,0,0,.6);
-  background-color: #3863ba;
-}
-.team-content h1{
-  color: orange;
-  margin-top: 30px;
-}
 
 
 
@@ -840,212 +714,5 @@ dl a{
             width: 100%;
             overflow-x: hidden;
           }
-          .info-content-slided{
-            top: 90px;
-          }
-          .info-content{
-            font-size: 14px;
-            line-height: 18px;
-            left:0;
-            left: 12.5vw;
-            width: 75vw;
-          }
-          .mobile-nav{
-            display: block;
-            position: absolute;
-            right: 10px;
-            top: 10px;
-            width: 20px;
-            height: 20px;
-            z-index: 6;
-          }
-          #fh5co-main-nav {
-            overflow: hidden;
-            height: 0px;
-            -webkit-transition: height 1.5s;
-            background-color: white !important;
-            width: 100%;
-            z-index: 10;
-          }
-          .container{
-            padding: 0;
-          }
-          .nav-active{
-            height: 140px !important;
-          }
-          .nav-info-active{
-            top: 190px !important;
-          }
-          .fh5co-table, .fh5co-table-cell, .fh5co-hero, .fh5co-parallax{
-            height: 440px !important;
-          }
-         .list-terms{
-           font-size: 15px;
-        }
-         .mobile-footer-text{
-           font-size: 14px;
-         }
-         .contact-mobile{
-           display: none;
-         }
-        .contact-mobile-second{
-          margin-top: 0 !important;
-        }
-        .opportunity-background{
-          padding-top: 20px;
-          height: auto !important;
-          min-height: calc(100vh - 59px);
-        }
-        .opportunity-head{
-          width: 100%;
-          opacity: .85;
-        }
-        .opportunity-text{
-          font-size: 13px;
-          line-height: 22px;
-          background:rgba(50, 50, 50, .85);
-          margin-bottom: 250px;
-        }
-        .dual{
-          width: 100%;
-          margin: 0;
-          font-size: 15px;
-        }
-        .dual-plus{
-          width: 100%;
-          font-size: 60px;
-        }
-        .property-icon{
-          width: 46.5%;
-          background-size: auto 100%;
-        }
-        .icon-overlay{
-          background-size: auto 100%;
-          height: 100%
-        }
-        .properties-head{
-          background-color: orange;
-          color: white;
-          width: 300px;
-          margin-left: calc(50% - 150px);
-          text-align: center;
-          font-size: 20px;
-          margin-top: 0;
-          margin-bottom: 60px;
-          height: 125px;
-          padding-top: 24px;
-          position: relative;
-          color: white;
-          letter-spacing: 0.2em;
-          text-align: center;
-          text-transform: uppercase;
-        }
-        .properties-head:after{
-          content: "";
-        position: absolute;
-        left: 0;
-        bottom: 0;
-        width: 0;
-        height: 0;
-        border-bottom: 30px solid #b3cccc;
-        border-left: 150px solid transparent;
-        border-right: 150px solid transparent;
-        }
-        .side-shadows{
-          box-shadow: 0px -2px 10px #444 !important;
-        }
-        .properties-blurb{
-          width: 100%;
-          position: relative;
-          top:0;
-          right:0;
-          max-height: none;
-          border: none;
-          box-shadow: none;
-          z-index: 0;
-        }
-        .properties-blurb p{
-          font-size: 20px;
-        }
-        #map{
-          display: none;
-        }
-        .property-icon-content{
-          position: fixed;
-          width: 90vw;
-          height: 70vh;
-          background-color: white;
-          left: 5vw;
-          z-index: 10;
-          bottom: 15vh;
-          box-shadow: 1px 1px 30px #444, 0px 0px 2000px 2000px rgba(0, 0, 0, .5);
-          -webkit-transition: all 1.5s ease-out;
-          display: none;
-          overflow: hidden;
-          border-radius: 4px;
-        }
-        .property-icon-content p{
-          font-size: 15px;
-        }
-        tr, td{
-          font-size: 13px;
-        }
-        .property-icon-content-scroll{
-          position: relative;
-          width: 100%;
-          height: calc(100% - 45px);
-          overflow: scroll;
-          padding: 10px;
-        }
-        .property-icon{
-          height: 140px;
-        }
-        .icon-head{
-          padding: 5px;
-          height: 47px;
-        }
-        .icon-head h4{
-          font-size: 11px;
-        }
-        .icon-head p{
-          font-size: 10px;
-        }
-        .tiny-table{
-          font-size: 10px !important;
-        }
-        .slide-object-active{
-          width: 100%;
-          height: 100%;
-        }
-        .row{
-          margin-left: 0;
-          margin-right: 0;
-        }
-        header, #fh5co-intro-section, #fh5co-services-section, #fh5co-featured-work-section, #fh5co-common-section, #fh5co-blog-section, #footer, #fh5co-contact-section, #fh5co-work-section{
-          padding-bottom:0;
-          }
-        h2{
-          width: 100% !important;
-          margin-left: 0 !important;
-        }
-        #fh5co-common-section{
-          padding-bottom: 50px;
-        }
-        .section-content{
-          margin-top: 20px;
-          width: calc(100%);
-          float: left;
-          font-size: 25px;
-          line-height: 21px;
-          padding-left: 0;
-        }
-        .content-wrapper{
-          padding: 20px;
-        }
-        .section-head{
-          margin-top: 0px;
-        }
-        .rule{
-          margin: 30px 0 0 0;
-        }
+
 }

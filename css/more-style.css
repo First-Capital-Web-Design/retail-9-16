@@ -115,6 +115,25 @@ div.nav-scroll a:hover{
   line-height: 23px;
   padding: 50px;
 }
+.dark-page-head-content-container{
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 1000px;
+  height: 100%;
+  background: linear-gradient(to right, rgba(30, 30, 30, 1), rgba(30, 30, 30, .0));
+  overflow: hidden;
+}
+.dark-page-head-content{
+  width: 350px;
+  position: relative;
+  color: white;
+  font-size: 18px;
+  line-height: 23px;
+  padding: 50px;
+  margin-top: calc(30vh - 170px);
+  margin-left: 70px;
+}
 .page-head-content h1{
   background-color: orange;
   color: white;

@@ -42,6 +42,7 @@
 
 	</head>
 	<body>
+		<div id="password-protect" style="background-color: #444; width: 100vw; height: 100vh; z-index: 1000; position: fixed; left: 0; top: 0;"></div>
 
 		<div class="navbar-placeholder"></div>
 
@@ -317,7 +318,7 @@ $(".first-brand-content-container").animate({marginLeft: "0vw"}, 800);
 			var passwordInput = prompt("Please enter Password");
 
 			if(passwordInput == "f-c-r-16"){
-
+					$("#password-protect").hide();
 			} else{
 				$("body").html("");
 			}

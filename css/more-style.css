@@ -132,7 +132,7 @@ div.nav-scroll a:hover{
   line-height: 23px;
   padding: 50px;
   margin-top: calc(30vh - 170px);
-  margin-left: 70px;
+  margin-left: 12vw;
 }
 .page-head-content h1{
   background-color: orange;

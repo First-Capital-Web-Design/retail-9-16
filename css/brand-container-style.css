@@ -1,0 +1,143 @@
+.brand-container{
+  display: block;
+  height:  200px;
+  background-color: white;
+  overflow: hidden;
+  border-top: 2px solid white;
+  transition: all .5s;
+  white-space: nowrap;
+}
+.brand-click{
+  display: inline-block;
+  position: relative;
+  width: 25vw;
+  height: 200px;
+  background-size: 80% auto;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-colr: red;
+  transition: all .2s, width 0;
+  overflow-y: visible;
+}
+.brand-content-wrapper{
+  height: 0px;
+  white-space: nowrap;
+  overflow: hidden;
+  width: 100vw;
+  transition: height .8s;
+  position: relative;
+}
+.brand-content-wrapper .arrow{
+  position: absolute;
+  color: rgba(255,255,255, .5);
+  height: 50px;
+  width: 50px;
+  top: 220px;
+  text-align: center;
+  text-shadow: 0 0 2px rgba(0,0,0,.2);
+}
+.brand-content-wrapper .left{
+  left: 20px;
+}
+.brand-content-wrapper .right{
+  right: 20px;
+}
+.brand-content-container{
+  width: 100vw;
+  height: 500px;
+  background-color: #005faf;
+  display: inline-block;
+  top: 200px;
+  left: 0;
+  color: white;
+  opacity: 1;
+  transition: all .7s, width 0;
+  white-space: normal;
+  box-shadow: 0px -150px 220px -120px rgba(0, 0, 0, 0.3) inset;
+}
+.brand-content{
+  padding: 50px 80px;
+  width: 50vw;
+  float: left;
+}
+.brand-content p{
+  color: white;
+  width: 400px;
+  display: inline-block;
+}
+.brand-content  h1{
+  color: white;
+}
+.brand-content-image{
+  width: 50vw;
+  height: 498px;
+  float: left;
+  right: 0;
+  top:0;
+  background-size: cover;
+}
+.brand-content-image-left{
+  width: 50vw;
+  height: 498px;
+  position: absolute;
+  left: 0;
+  top:0;
+  background-size: cover;
+}
+.auntie-annes{
+  background-image:url(../images/auntie-annes-logo.png);
+  background-color: #005faf;
+}
+.auntie-annes::before{
+
+}
+.mrs-fields{
+  background-color: #c32031;
+  background-image:url(../images/mrs-fields-logo.png);
+}
+.tcby{
+  background-color: #ff00fe;
+  background-image:url(../images/tcby-logo.png);
+}
+.cinnabon{
+  background-color: #64ccc9;
+  background-image:url(../images/cinnabon-logo.png);
+}
+.cinnabon h1, .cinnabon p{
+  color: #211551;
+}
+/*.team-container{
+  width: 100vw;
+  height: 800px;
+  background-color: silver;
+  padding: 40px 0 120px 0;
+}
+.team-names{
+  width: 200px;
+  float: left;
+  margin-left: 100px;
+  padding-right: 20px
+}
+.team-names li{
+  color: white;
+  font-size: 23px;
+  text-align: right;
+  cursor: pointer;
+}
+.team-content{
+  float: left;
+  width: 700px;
+  height: auto;
+  padding: 0px 30px 70px 30px;
+  color: white;
+  box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.8);
+  background-color: #063260;
+}
+.team-content h1{
+  width: 700px;
+  margin-left: -30px;
+  margin-top: 0;
+  background-color: #4289FA;
+  padding: 25px;
+  color: white;
+}*/

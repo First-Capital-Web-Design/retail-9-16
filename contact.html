@@ -56,14 +56,14 @@
 
 	</head>
 	<body>
-		<div class="navbar-placeholder"></div>
+		<div class="navbar-placeholder"></div><!-- offsets page contents for fixed navbar -->
 
 		<div class="navbar navbar-fixed">
 
 			<div class="logo-small-nav"></div>
 
-			<a href="about.html">About Us</a>
-			<a href="franchising.html">Franchising</a>
+			<a href="index.html">About Us</a>
+			<a href="opportunities.html">Opportunities</a>
 			<a href="locations.html">Locations</a>
 			<a href="contact.html" style="color: orange;">Contact</a>
 
@@ -71,42 +71,40 @@
 
 		<a href="about.html" style="opacity: 0;"><div class="logo"></div></a>
 
-		<div class="mobile-nav" style="width: 25px; height: 25px; background-image: url('https://www.newfangled.com/wp-content/uploads/2014/08/stuffcontentmgrfiles2ac67e44c30a21635f8a9d498f832bc1cmisc_resized80_313_257_hamenu.png'); background-size: 25px 25px;"></div>
-
 		<!-- page content -->
 
-		<div class="page-head-container" style="background-image: url(http://media.istockphoto.com/photos/wood-background-texture-pattern-dark-grunge-plank-vignette-picture-id478438496?s=2048x2048); height: calc(100vh - 140px); min-height: 450px; background-size: cover; background-position: center top;">
+		<div class="page-head-container" style="background: silver; height: calc(100vh - 100px); min-height: 450px; background-size: cover; background-position: center top;">
 
-			<div class="dark-page-head-content-container">
+			<div class="dark-page-head-content-container" style="width: 100vw">
 
-			<div class="dark-page-head-content" style="width: 600px;">
+			<div class="contact-wrapper" style="">
 
 				<h1 style="color: white;">Get In Touch</h1>
 
-					<i class="fa fa-envelope fa-2x" aria-hidden="true" style=" vertical-align: middle; width: 60px; text-align: center; color: #4289fa"></i> info@firstcapitalre.com
+					<i class="fa fa-envelope fa-2x contact-icon" aria-hidden="true"></i> info@firstcapitalre.com
 
-					<br><br>
+					<i class="fa fa-phone fa-2x contact-icon" aria-hidden="true"></i> 212.388.6800
 
-					<i class="fa fa-phone fa-2x" aria-hidden="true" style=" vertical-align: middle; width: 60px; text-align: center; color: #4289fa"></i> 212.388.6800
+					<i class="fa fa-map-marker fa-2x contact-icon" aria-hidden="true"></i> 60 Broad Sreet, 34th Floor New York, NY 10004
 
-					<br><br>
+			</div>
 
-					<i class="fa fa-map-marker fa-2x" aria-hidden="true" style=" vertical-align: middle; width: 60px; text-align: center; color: #4289fa"></i> 60 Broad Sreet, 34th Floor New York, NT 10004
+			<div class="contact-form">
 
+				<h3 style="margin-bottom: 10px;">Send us a message:</h3>
+
+				<form>
+
+					<input type="text" placeholder="Name">
+					<input type="text" placeholder="Email" style="margin-left: 15px;">
+					<textarea style="width: 100%; height: 155px" placeholder="Message"></textarea>
+
+				</form>
 			</div>
 
 			</div>
 
 		</div> <!--end section -->
-
-		<div style="background-color: #4289FA; height: 40px !important; position: relative; box-shadow: 0px -5px 12px rgba(0, 0, 0, .5), 0px -14px 12px -10px rgba(0, 0, 0, .5) inset; margin-top: 0px;">
-			<div class="overlay"></div>
-			<div class="container">
-				<div class="row">
-					<div style="width: 200px; height: 75px; background-color: #063260; position: absolute; bottom: 0; left: calc(50% - 105px); background-image: url(images/retail-logo-white.png); background-size: 80% auto; background-position: center; background-repeat: no-repeat; box-shadow: 0px -14px 7px -10px rgba(0, 0, 0, .5) inset, 0px 0px 10px 3px rgba(0, 0, 0, .5);"></div>
-				</div>
-			</div>
-		</div><!-- end: fh5co-parallax -->
 
 	<!-- jQuery -->
 	<script src="js/jquery.min.js"></script>
@@ -126,90 +124,6 @@
 	<script src="js/script.js"></script>
 	<script src="js/team.js"></script>
 	<script src="js/bio-main.js"></script> <!-- Gem jQuery -->
-
-
-	<script>
-		$(document).ready(function(){
-
-			var brandContentActive = false;
-			var currentSelect;
-
-			$(".brand-click").click(function(){
-
-				if(brandContentActive === false){
-
-					$('html, body').animate({
-							scrollTop: $("#brand-container").offset().top - 100
-					}, 500);
-
-					$(".brand-content-container").css("opacity","0");
-					$(".brand-content-container").css("visibility","hidden");
-
-					$(this).children().children().css("visibility","visible");
-					$(this).children().children().css("opacity","1");
-
-					$(this).children().css("visibility","visible");
-					$(this).children().css("opacity","1");
-
-					$(this).css("border-bottom","2px solid transparent");
-
-				$(".brand-container").css("height","700px");
-
-				brandContentActive = true;
-
-				currentSelect = this;
-
-			} else if(this == currentSelect){
-
-				$(".brand-container").css("height","200px");
-
-				$(".brand-click").css("border-bottom","2px solid white");
-
-				brandContentActive = false;
-
-				currentSelect = 0;
-
-			} else {
-
-				$(".brand-content-container").css("opacity","0");
-				$(".brand-content-container").css("visibility","hidden");
-
-				$(this).children().children().css("visibility","visible");
-				$(this).children().children().css("opacity","1");
-
-				$(this).children().css("visibility","visible");
-				$(this).children().css("opacity","1");
-
-				$(".brand-click").css("border-bottom","2px solid white");
-				$(this).css("border-bottom","2px solid transparent");
-
-
-				currentSelect = this;
-
-			}
-
-			}).children().click(function(e) {
-			  return false;
-			});
-
-			var $root = $('html, body');
-			$('a').click(function() {
-					var href = $.attr(this, 'href');
-					$root.animate({
-							scrollTop: $(href).offset().top - 50
-					}, 800, function () {
-						$(".property-icon-content").css("opacity","1");
-						$(".pop-up-background").addClass("pop-up-background-active");
-						if($(this).hasClass("myrtle")){$(".myrtle-beach-property").children(".property-icon-content").css("display", "block");}
-
-					});
-					return false;
-			});
-
-
-	});
-
-	</script>
 
 	</body>
 </html>

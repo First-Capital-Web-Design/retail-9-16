@@ -49,8 +49,8 @@
 
 			<div class="logo-small-nav"></div>
 
-			<a href="about.html" style="color: orange;">About Us</a>
-			<a href="franchising.html">Franchising</a>
+			<a href="/" style="color: orange;">About Us</a>
+			<a href="opportunities.html">Opportunities</a>
 			<a href="locations.html">Locations</a>
 			<a href="contact.html">Contact</a>
 
@@ -80,7 +80,7 @@
 
 		<div class="brand-container" id="brand-container">
 
-			<div class="brand-click auntie-annes"></div><div class="brand-click mrs-fields"></div><div class="brand-click tcby"></div><div class="brand-click cinnabon"></div>
+			<div class="brand-click cinnabon"></div><div class="brand-click auntie-annes"></div><div class="brand-click mrs-fields"></div><div class="brand-click tcby"></div>
 
 
 		</div>
@@ -89,7 +89,21 @@
 
 		<div class="brand-content-wrapper">
 
-					<div class="brand-content-container first-brand-content-container">
+					<div class="brand-content-container first-brand-content-container" style="background-color: #64ccc9;">
+
+							<div class="brand-content">
+
+							<h1>Cinnabon</h1>
+
+							<p>
+								In 1985, foodies in Seattle, WA aspired to make “the world’s greatest cinnamon roll” for a new brand. After hiring a local baker, three months, hundreds of kitchen experiments, and many trips to Indonesia to find the best, most flavorful cinnamon, the team perfected the Cinnabon recipe and opened the first Bakery.</p>
+							</p>
+
+						</div>
+
+						<div class="brand-content-image" style="background-image: url(http://scrubsmag.mindovermediallc.netdna-cdn.com/wp-content/uploads/cinnabon-e1462236348446-600x374.jpg);"></div>
+
+					</div><!-- new brand --><div class="brand-content-container" style="left: -25vw">
 
 						<div class="brand-content">
 
@@ -103,7 +117,9 @@
 
 						<div class="brand-content-image" style="background-image: url(http://www.franchisechatter.com/wp-content/uploads/2011/07/5816417524_c85cd379bd_z.jpg);"></div>
 
-					</div><!-- new brand --><div class="brand-content-container" style="background-color: #c32031; left: -25vw;">
+					</div><!-- new brand --><div class="brand-content-container" style="background-color: #c32031; left: -50vw;">
+
+						<div class="brand-content-image" style="background-image: url(http://citysaver.com/wp-content/uploads/Milk-Chocolate-Chip-2.jpg);"></div>
 
 						<div class="brand-content">
 
@@ -115,9 +131,8 @@
 
 					</div>
 
-					<div class="brand-content-image" style="background-image: url(http://citysaver.com/wp-content/uploads/Milk-Chocolate-Chip-2.jpg);"></div>
 
-				</div><!-- new brand --><div class="brand-content-container" style="background-color: #ff00fe; left: -50vw;">
+				</div><!-- new brand --><div class="brand-content-container" style="background-color: #ff00fe; left: -75vw;">
 
 					<div class="brand-content-image" style="background-image: url(http://nwatcby.com/wp-content/uploads/2015/02/tcby.png); float: left;"></div>
 
@@ -131,21 +146,7 @@
 
 				</div>
 
-			</div><!-- new brand --><div class="brand-content-container" style="background-color: silver; left: -75vw;">
-
-				<div class="brand-content-image" style="background-image: url(http://scrubsmag.mindovermediallc.netdna-cdn.com/wp-content/uploads/cinnabon-e1462236348446-600x374.jpg);"></div>
-
-				<div class="brand-content brand-content">
-
-				<h1>Cinnabon</h1>
-
-				<p>
-					In 1985, foodies in Seattle, WA aspired to make “the world’s greatest cinnamon roll” for a new brand. After hiring a local baker, three months, hundreds of kitchen experiments, and many trips to Indonesia to find the best, most flavorful cinnamon, the team perfected the Cinnabon recipe and opened the first Bakery.</p>
-				</p>
-
 			</div>
-
-		</div>
 
 		</div>
 
@@ -246,15 +247,15 @@
 											scrollTop: $("#brand-container").offset().top - 100
 									}, 500);
 
-									if($(this).hasClass("mrs-fields")){
-								$(".first-brand-content-container").css("margin-left", "-100vw");
-							} else if ($(this).hasClass("tcby")){
-						$(".first-brand-content-container").css("margin-left", "-200vw");
-					}	else if ($(this).hasClass("cinnabon")){
-				$(".first-brand-content-container").css("margin-left", "-300vw");
-			} else {
-				$(".first-brand-content-container").css("margin-left", "0vw");
-			}
+				if($(this).hasClass("auntie-annes")){
+					$(".first-brand-content-container").css("margin-left", "-100vw");
+				} else if ($(this).hasClass("mrs-fields")){
+					$(".first-brand-content-container").css("margin-left", "-200vw");
+				}	else if ($(this).hasClass("tcby")){
+				 	$(".first-brand-content-container").css("margin-left", "-300vw");
+				} else {
+					$(".first-brand-content-container").css("margin-left", "0vw");
+				}
 
 
 								$(".brand-content-wrapper").css("height","500px");
@@ -275,14 +276,14 @@
 
 			} else {
 
-				if($(this).hasClass("mrs-fields")){
-			$(".first-brand-content-container").animate({marginLeft: "-100vw"}, 800);
-		} else if ($(this).hasClass("tcby")){
-	$(".first-brand-content-container").animate({marginLeft: "-200vw"}, 800);
-}	else if ($(this).hasClass("cinnabon")){
-$(".first-brand-content-container").animate({marginLeft: "-300vw"}, 800);
+				if($(this).hasClass("cinnabon")){
+			$(".first-brand-content-container").animate({marginLeft: "0vw"}, 800);
+		} else if ($(this).hasClass("auntie-annes")){
+	$(".first-brand-content-container").animate({marginLeft: "-100vw"}, 800);
+}	else if ($(this).hasClass("mrs-fields")){
+$(".first-brand-content-container").animate({marginLeft: "-200vw"}, 800);
 } else {
-$(".first-brand-content-container").animate({marginLeft: "0vw"}, 800);
+$(".first-brand-content-container").animate({marginLeft: "-300vw"}, 800);
 }
 
 

@@ -26,7 +26,7 @@
 
 	<link rel="stylesheet" href="css/style.css">
 	<link rel="stylesheet" href="css/more-style.css">
-	<link rel="stylesheet" href="css/bio-style.css">
+	<link rel="stylesheet" href="css/slider.css">
 
 	<script src="https://use.typekit.net/uhb0dcd.js"></script>
 	<script>try{Typekit.load({ async: true });}catch(e){}</script>
@@ -39,18 +39,18 @@
 	<![endif]-->
 
 	<script src="js/jquery.scrollUp.min.js"> </script>
-	<script src="https://use.fontawesome.com/73630fef6c.js"></script>
-
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 	</head>
 	<body>
-		<div class="navbar-placeholder"></div>
+
+		<div class="navbar-placeholder"></div><!-- offsets page contents for fixed navbar -->
 
 		<div class="navbar navbar-fixed">
 
 			<div class="logo-small-nav"></div>
 
-			<a href="about.html">About Us</a>
-			<a href="franchising.html">Franchising</a>
+			<a href="index.html">About Us</a>
+			<a href="opportunities.html">Opportunities</a>
 			<a href="locations.html" style="color: orange;">Locations</a>
 			<a href="contact.html">Contact</a>
 
@@ -62,92 +62,67 @@
 
 		<!-- page content -->
 
-		<div class="slide-wrapper">
+<div class="location-wrapper">
+		<div class="location-thumb-container">
 
-			<div class="slide-head-container first-slide" style="background-image: url(images/cinnabon-plans.png); height: calc(100vh - 140px); min-height: 450px; background-size: cover; background-position: center; margin-left: 0;">
+			<h1 class="location-thumb-head">Brands</h1>
 
-				<div class="page-head-content-container" style="">
+				<div class="location-thumb" style="background-image:url(images/cinnabon2.png);"><span>Cinnabon</span></div>
+				<div class="location-thumb" style="background-image:url(images/auntie-annes1.png);"><span>Auntie Anne's</span></div>
+				<div class="location-thumb"><span>Mrs. Fields</span></div>
+				<div class="location-thumb"><span>TCBY</span></div>
 
-				<div class="page-head-content">
+			<h1 class="location-thumb-head">In Development</h1>
 
-					<h1 style="width: 400px; margin-left: -60px; background: linear-gradient(to right, #063260, #4289fa);">Cinnabon</h1>
-
-
-
-					In 1985, foodies in Seattle, WA aspired to make “the world’s greatest cinnamon roll” for a new brand. After hiring a local baker, three months, hundreds of kitchen experiments, and many trips to Indonesia to find the best, most flavorful cinnamon, the team perfected the Cinnabon recipe and opened the first Bakery.
-
-				</div>
-
-			</div>
-
-			</div><div class="slide-head-container" style="background-image: url(images/auntie-annes-plans.png); height: calc(100vh - 140px); min-height: 450px; background-size: cover; background-position: center; ">
-
-			<div class="page-head-content-container" style="">
-
-			<div class="page-head-content">
-
-				<h1 style="width: 400px; margin-left: -60px; background: linear-gradient(to right, #063260, #4289fa)">Auntie Anne's</h1>
-
-
-				Auntie Anne’s got its start in 1988 when Anne Beiler bought a stand in a Pennsylvania farmers market. After some experimentation, “Auntie” Anne created a masterpiece. We continue to bake by a certain philosophy that keeps people coming back for more delicious dough. It’s easy to see: We are so much more than just pretzels.
-
-
-			</div>
-
-			</div>
-
-		</div><div class="slide-head-container" style="background-image: url(http://media.istockphoto.com/photos/female-barista-serving-food-to-mid-adult-man-in-cafe-picture-id500432708?s=2048x2048); height: calc(100vh - 140px); min-height: 450px; background-size: cover; background-position: center top; margin-left: 0;">
-
-			<div class="page-head-content-container" style="">
-
-			<div class="page-head-content">
-
-				<h1 style="width: 400px; margin-left: -60px; background: linear-gradient(to right, #063260, #4289fa)">Mrs. Fields</h1>
-
-
-				Yes, there really is a Mrs. Fields, and her name is Debbi. She began baking and selling her famous chocolate chip cookies back in 1977 in Palo Alto, California, when she was only 20 years old. She knew that once people tasted her fresh baked cookies made with premium, fresh ingredients, they would be hooked.
-
-
-			</div>
-
-			</div>
-
-		</div><div class="slide-head-container" style="background-image: url(http://media.istockphoto.com/photos/female-barista-serving-food-to-mid-adult-man-in-cafe-picture-id500432708?s=2048x2048); height: calc(100vh - 140px); min-height: 450px; background-size: cover; background-position: center top; margin-left: 0;">
-
-			<div class="page-head-content-container" style="">
-
-			<div class="page-head-content">
-
-				<h1 style="width: 400px; margin-left: -60px; background: linear-gradient(to right, #063260, #4289fa)">TCBY</h1>
-
-
-				TCBY isn’t just about making great frozen yogurt or continuing to push ourselves to innovate in the market, although we do both. We also believe it’s our job to provide our franchisees with the infrastructure, resources, and industry experts to help them open and operate a successful business that will bring them joy for years to come.
-
-
-			</div>
-
-			</div>
+				<div class="location-thumb" style="background-image:url(images/cinnabon2.png);"><span>Cinnabon - Century City</span></div>
+				<div class="location-thumb" style="background-image:url(images/auntie-annes1.png);"><span>Auntie Anne's - Century City</span></div>
 
 		</div>
-	</div>
-		<!--end section -->
+		<div class="location-current-container">
 
-		<i class="fa fa-arrow-left fa-2x" id="left-arrow" aria-hidden="true" style="position: absolute; top: 50vh; left: 400px; color: white; text-shadow: 1px 1px 10px rgba(50,50,50,.6);"></i>
+			<!-- <div class="location-current-image"></div> -->
 
-		<i class="fa fa-arrow-right fa-2x" id="right-arrow" aria-hidden="true" style="position: absolute; top: 50vh; right: 30px; color: white; text-shadow: 1px 1px 10px rgba(50,50,50,.6);"></i>
-
-		<!-- end arrows -->
-
-		<div style="background-color: #3863ba; height: 40px !important; position: relative; box-shadow: 0px -5px 12px rgba(0, 0, 0, .5), 0px -14px 12px -10px rgba(0, 0, 0, .5) inset; margin-top: -12px;">
-			<div class="overlay"></div>
-			<div class="container" style="height: 70px !important;">
-				<div class="row">
-					<div style="width: 200px; height: 75px; background-color: #002266; position: absolute; bottom: 0; left: calc(50% - 105px); background-image: url(images/retail-logo-white.png); background-size: 80% auto; background-position: center; background-repeat: no-repeat; box-shadow: 0px -14px 7px -10px rgba(0, 0, 0, .5) inset, 0px 0px 10px 3px rgba(0, 0, 0, .5);"></div>
+			<div class="slide-wrapper">
+				<div class="slide-container">
+					<div class="slide slide-first slide-active" style="background-image: url(images/cinnabon1.png)"></div>
+					<div class="slide" style="background-image: url(images/cinnabon2.png)"></div>
+					<div class="slide" style="background-image: url(images/cinnabon3.png)"></div>
 				</div>
+			<div class="left slider"><div class="arrow"><i class="fa fa-angle-left fa-2x"></i></div></div>
+			<div class="right slider"><div class="arrow"><i class="fa fa-angle-right fa-2x"></i></div></div>
 			</div>
-		</div><!-- end: fh5co-parallax -->
 
-		<footer class="page-footer text-md-left" style="background-color:#444; color: white; padding: 40px; 0px;">
+			<h1 class="location-current-head">15 Cinnabons in the South West</h1>
+
+			<p>
+				In 1985, foodies in Seattle, WA aspired to make “the world’s greatest cinnamon roll” for a new brand. After hiring a local baker, three months, hundreds of kitchen experiments, and many trips to Indonesia to find the best, most flavorful cinnamon, the team perfected the Cinnabon recipe and opened the first Bakery
+			</p>
+
+			<h3>Locations iclude:</h3>
+			<ul>
+				<li>Arden Fair Mall - Sacramento, CA</li>
+				<li>Galleria at Tyler - Riverside, CA</li>
+				<li>Imperial Valley Mall - El Centro, CA</li>
+				<li>Montclair Plaza - Montclair, CA</li>
+				<li>Montebello Town - Montebello, CA</li>
+				<li>Moreno Valley - Moreno Valley, CA</li>
+				<li>Northridge Fashion - Northridge, CA</li>
+				<li>Northridge Mall - Salinas, CA</li>
+				<li>Oakridge Mall - San Jose, CA</li>
+				<li>Santa Rosa Plaza - Santa Rosa, CA</li>
+				<li>Solano Town Center - Fairfield, CA</li>
+				<li>Sunvalley Mall - Concord, CA</li>
+				<li>Sunrise Mall - Citrus Heightsm, CA</li>
+				<li>Universal City Walk - Universal City, CA</li>
+				<li>Vintage Faire Mall - Modesto, CA</li>
+			</ul>
+
+
+
+		</div>
+</div>
+
+		<!-- <footer class="page-footer text-md-left" style="background-color:#444; color: white; padding: 40px; 0px; z-index: 2; position: relative;">
 			<div class="row" style="margin-right: 0;">
 				<div class="col-md-10 col-md-offset-1">
 					<div class="col-md-12 col-sm-12 col-xs-12">
@@ -190,7 +165,6 @@
 						</div>
 		</div>
 		<div class="col-md-10 col-sm-10 col-xs-12 col-md-offset-1">
-			<span class="number-holder"></span>
 			<div class="desc" style="padding-left:15px;">
 
 					<p style="text-align:justify; font-size: 11px; color: grey; margin-top: 25px; width: 100%; line-height: 13px;">
@@ -199,7 +173,7 @@
 			</div>
 		</div>
 	</div>
-	</footer>
+	</footer> -->
 
 	<!-- jQuery -->
 	<script src="js/jquery.min.js"></script>
@@ -218,73 +192,8 @@
 	<script src="js/main.js"></script>
 	<script src="js/script.js"></script>
 	<script src="js/team.js"></script>
+	<script src="js/slider.js"></script>
 	<script src="js/bio-main.js"></script> <!-- Gem jQuery -->
-
-
-	<script>
-		$(document).ready(function(){
-
-			var slideValue = 0;
-			var slideReset = -300;
-
-
-			$("#right-arrow").click(function(){
-
-				if(slideValue > slideReset){
-
-				slideValue -= 100;
-
-				console.log(slideValue);
-
-				$(".first-slide").css("margin-left" , slideValue + "vw");
-
-			} else {
-
-				slideValue = 0;
-
-				$(".first-slide").css("margin-left" , slideValue + "vw");
-
-			}
-
-			});
-
-			$("#left-arrow").click(function(){
-
-				if(slideValue < 0){
-
-				slideValue += 100;
-
-				console.log(slideValue);
-
-				$(".first-slide").css("margin-left" , slideValue + "vw");
-
-			} else {
-
-				slideValue = -300;
-
-				$(".first-slide").css("margin-left" , slideValue + "vw");
-
-			}
-
-			});
-
-			var $root = $('html, body');
-			$('a').click(function() {
-					var href = $.attr(this, 'href');
-					$root.animate({
-							scrollTop: $(href).offset().top - 50
-					}, 800, function () {
-						$(".property-icon-content").css("opacity","1");
-						$(".pop-up-background").addClass("pop-up-background-active");
-						if($(this).hasClass("myrtle")){$(".myrtle-beach-property").children(".property-icon-content").css("display", "block");}
-
-					});
-					return false;
-			});
-
-	});
-
-	</script>
 
 	</body>
 </html>
